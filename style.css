@@ -1,0 +1,357 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+}
+
+:root {
+    --cor-de-letra: #c115ff;
+}
+
+.secao1 {
+    display: flex;
+    margin-top: 15rem;
+    margin-left: 25rem;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.aprensetação {
+    font-size: 15px;
+    color: var(--cor-de-letra);
+}
+
+.FRONTEND {
+    font-size: 70px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 1) 60%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.DEVELOPER {
+    font-size: 95px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 1) 60%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-icons {
+    margin-right: 20px;
+    margin-left: 29px;
+    /* Espaço entre os ícones */
+}
+
+/* Para evitar margem à direita no último ícone */
+.contact-icons:last-child {
+    margin-right: 1px;
+}
+
+.text {
+    text-decoration: none;
+}
+
+.social-icon {
+    transition: fill 0.1s ease;
+}
+
+.social-icon:hover {
+    fill: var(--cor-de-letra);
+}
+
+.card:hover {
+    fill: var(--cor-de-letra);
+}
+
+@media (max-width: 768px) {
+
+    .secao1 {
+        display: flex;
+        margin-top: 4rem;
+        margin-left: 3.2rem;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .FRONTEND {
+        font-size: 45px;
+    }
+
+    .DEVELOPER {
+        font-size: 50px;
+    }
+
+    .contact-icons {
+        padding-top: 40px;
+        margin-right: 19px;
+        margin-left: 29px;
+    }
+
+    .aprensetação {
+        color: transparent;
+
+    }
+
+
+}
+
+/* Habilidades */
+
+.habilidade {
+    margin-top: 19%;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 1) 60%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.container-card {
+    display: flex;
+    margin-top: 5%;
+    justify-content: center;
+    gap: 1px;
+    /* Espaço entre os cards */
+}
+
+.container-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+    margin-top: 5%;
+    padding: 0 170px;
+    /* Espaço nas laterais */
+}
+
+.card {
+    width: 150px;
+    height: 200px;
+    border-radius: 15%;
+    background-color: rgb(29, 28, 28);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card h3 {
+    color: white;
+    margin: 0;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    /* Aumenta o tamanho do card ao passar o mouse */
+    box-shadow: 0 0 10px #c115ff, 0 0 20px #c115ff, 0 0 5px #c115ff, 0 0 10px #c115ff;
+    /* Efeito neon */
+}
+
+.skill-icon {
+    width: 50%;
+    height: 50%;
+    margin-bottom: 10px;
+    transition: fill 0.3s ease;
+    /* Transição suave para a mudança de cor */
+}
+
+.card:hover .skill-icon path {
+    fill: var(--cor-de-letra);
+}
+
+.card h3 {
+    color: white;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .container-card {
+        grid-template-columns: 1fr;
+        padding: 0 20px;
+        /* Ajuste o padding lateral para telas menores */
+    }
+
+    .card {
+        width: 80%;
+        height: auto;
+        /* Deixe a altura automática para se ajustar ao conteúdo */
+        margin-bottom: 20px;
+        /* Espaço entre os cards */
+    }
+}
+
+/*PROJETOS*/
+
+.Projetos {
+    margin-top: 19%;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 1) 60%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.card-projeto {
+    width: 250px;
+    height: 370px;
+    border-radius: 13%;
+    background-color: rgb(29, 28, 28);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.card-projeto:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #c115ff, 0 0 20px #c115ff, 0 0 5px #c115ff, 0 0 10px #c115ff;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.skill-icon-projeto {
+    width: 55px;
+    height: 55px;
+    transition: fill 0.3s ease;
+}
+
+.card-projeto:hover .skill-icon-projeto path {
+    fill: var(--cor-de-letra);
+}
+
+a {
+    text-decoration: none;
+    color: var(--cor-de-letra);
+    margin-top: auto;
+}
+
+p {
+    padding-top: 65px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900px;
+}
+
+/*sobre mim*/
+
+.SOBRE-MIM {
+    margin-top: 19%;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 1) 60%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+
+.container-sobre {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 18%;
+    margin-right: 18%;
+    padding: 10px;
+}
+
+.lista {
+    flex: 1;
+    list-style-type: none;
+    padding: 0;
+}
+
+.lista1 {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900px;
+}
+
+li::marker {
+    color: var(--cor-de-letra);
+}
+
+img {
+    flex: 1;
+    max-width: 300px;
+    border-radius: 50%;
+    margin-left: 20px;
+    object-fit: cover;
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
+    .container-sobre {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    img {
+        order: -1;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .lista1 {
+        order: 1;
+        list-style: none;
+    }
+}
+
+/*footer*/
+
+.footer {
+    display: flex;
+    justify-content: center;
+    color: rgb(173, 173, 173);
+    font-size: 20px;
+}
+
+@media (max-width: 768px) {
+
+    .footer {
+        display: flex;
+        justify-content: center;
+        color: rgb(173, 173, 173);
+        font-size: 15px;
+        margin: 2%;
+    }
+
+}
