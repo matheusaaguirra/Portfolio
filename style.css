@@ -81,37 +81,7 @@ body {
     fill: var(--cor-de-letra);
 }
 
-@media (max-width: 768px) {
 
-    .secao1 {
-        display: flex;
-        margin-top: 4rem;
-        margin-left: 3.2rem;
-        justify-content: center;
-        flex-direction: column;
-    }
-
-    .FRONTEND {
-        font-size: 45px;
-    }
-
-    .DEVELOPER {
-        font-size: 50px;
-    }
-
-    .contact-icons {
-        padding-top: 40px;
-        margin-right: 19px;
-        margin-left: 29px;
-    }
-
-    .aprensetação {
-        color: transparent;
-
-    }
-
-
-}
 
 /* Habilidades */
 
