@@ -86,7 +86,7 @@ body {
 /* Habilidades */
 
 .habilidade {
-    margin-top: 19%;
+    margin-top: 21%;
     display: flex;
     justify-content: center;
     font-size: 40px;
@@ -312,6 +312,7 @@ img {
     justify-content: center;
     color: rgb(173, 173, 173);
     font-size: 20px;
+    margin: 3%;
 }
 
 @media (max-width: 768px) {
@@ -325,3 +326,4 @@ img {
     }
 
 }
+

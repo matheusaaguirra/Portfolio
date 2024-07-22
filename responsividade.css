@@ -161,8 +161,8 @@
 @media (max-width: 768px) {
     .secao1 {
         display: flex;
-        margin-top: 13%;
-        margin-left: 10vw;
+        margin-top: 16%;
+        margin-left: 14%;
         justify-content: center;
         flex-direction: column;
     }
@@ -181,5 +181,11 @@
         font-size: 15px;
         color: transparent;
     }
+
+    .habilidade {
+        margin-top: 29%;
+
+    }
+
 
 }
