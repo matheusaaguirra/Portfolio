@@ -321,8 +321,8 @@ img {
         display: flex;
         justify-content: center;
         color: rgb(173, 173, 173);
-        font-size: 15px;
-        margin: 2%;
+        font-size: 13px;
+        margin: 5%;
     }
 
 }
