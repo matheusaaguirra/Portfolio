@@ -1,13 +1,1 @@
-const myObserver = new IntersectionObserver((entries)=>{
-    entries.forEach((entry)=>{
-        if(entry.isIntersecting){
-            entry.target.classList.add('show')
-        } else{
-            entry.target.classList.remove('show')
-        }
-    })
-})
-
-const elements = document.querySelectorAll('.hidden')
-
-elements.forEach((Element)=> myObserver.observe(Element))
+const menuButton=document.querySelector('.menu-toggle');const navLinks=document.querySelector('.nav-links');if(menuButton&&navLinks){menuButton.addEventListener('click',()=>{const open=navLinks.classList.toggle('open');menuButton.setAttribute('aria-expanded',String(open));menuButton.setAttribute('aria-label',open?'Fechar menu':'Abrir menu')});navLinks.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>{navLinks.classList.remove('open');menuButton.setAttribute('aria-expanded','false');menuButton.setAttribute('aria-label','Abrir menu')}))}const year=document.getElementById('year');if(year)year.textContent=new Date().getFullYear();const elements=document.querySelectorAll('.reveal');if('IntersectionObserver'in window&&!window.matchMedia('(prefers-reduced-motion: reduce)').matches){const observer=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target)}})},{threshold:.08});elements.forEach(el=>observer.observe(el))}else{elements.forEach(el=>el.classList.add('visible'))}
