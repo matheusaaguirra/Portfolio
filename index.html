@@ -115,16 +115,32 @@
             </div>
           </article>
           <article class="project project-card reveal">
-            <div class="project-media">
-              <img class="project-cover" src="assets/projects/museu-preview.svg" alt="Ilustração conceitual do sistema de museu desenvolvido em C, não é captura real" loading="lazy" decoding="async">
+            <div class="project-media project-code-media">
+              <div class="project-code-window" role="img" aria-label="Trecho real do arquivo main.c com menu de venda de ingressos e gerenciamento de obras">
+                <div class="code-window-top"><span class="code-window-dots" aria-hidden="true"><i></i><i></i><i></i></span><span>main.c</span><span>C</span></div>
+                <pre><code><span class="code-line"><span class="code-keyword">int</span> main()</span>
+<span class="code-line">{</span>
+<span class="code-line">  <span class="code-keyword">int</span> opcao = 0;</span>
+<span class="code-line">  <span class="code-keyword">bool</span> sair = <span class="code-keyword">false</span>;</span>
+<span class="code-line">  <span class="code-keyword">while</span> (!sair) {</span>
+<span class="code-line">    printf(<span class="code-string">"Escolha uma opcao:\n"</span>);</span>
+<span class="code-line">    printf(<span class="code-string">"1 - Venda de Ingressos\n"</span>);</span>
+<span class="code-line">    printf(<span class="code-string">"2 - Gerenciamento de Obras\n"</span>);</span>
+<span class="code-line">    scanf(<span class="code-string">"%d"</span>, &amp;opcao);</span>
+<span class="code-line">    <span class="code-keyword">switch</span> (opcao) {</span>
+<span class="code-line">      <span class="code-keyword">case</span> 1: compraDeIngresso(); <span class="code-keyword">break</span>;</span>
+<span class="code-line">    }</span>
+<span class="code-line">  }</span>
+<span class="code-line">}</span></code></pre>
+              </div>
               <span class="project-index">04 / SOFTWARE / ACADÊMICO</span>
-              <span class="project-concept">PRÉVIA ILUSTRATIVA</span>
-              <div class="project-media-shade" aria-hidden="true"></div>
+              <span class="project-concept project-authentic">TRECHO REAL DE CÓDIGO</span>
+            </div>
             </div>
             <div class="project-info">
               <div class="project-type">PROJETO ACADÊMICO · LINGUAGEM C</div>
               <h3>Museu Multitemático</h3>
-              <p>Sistema acadêmico de gerenciamento de ingressos, clientes e exposições, explorando lógica de programação e estruturas em C.</p>
+              <p>Projeto acadêmico desenvolvido em C, com menu em console para venda de ingressos, gerenciamento de obras, questionários e consulta de respostas em CSV. Sem interface gráfica.</p>
               <div class="tags"><span>Linguagem C</span><span>Gestão</span><span>Acadêmico</span></div>
               <div class="project-actions">
                 
